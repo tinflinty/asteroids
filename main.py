@@ -1,5 +1,5 @@
 import pygame
-from ASTEROID import Asteroid
+from asteroid import Asteroid
 from CONSTANTS import  SCREEN_HEIGHT,  SCREEN_WIDTH
 from LOGGER import log_state
 from PLAYER import Player
@@ -15,8 +15,9 @@ def main():
     clock = pygame.time.Clock()
     Player.containers = (updatable, drawable)
     Asteroid.containers = (asteroids, updatable, drawable)
-    AsteroidField.containers = (updatable)
+    AsteroidField.containers = updatable
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
+    asfield = AsteroidField()
     dt = 0.0
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     while True:
