@@ -1,12 +1,13 @@
-from turtle import update
+### USE "uv run main.py" TO PLAY ###
 
-from  import Shot
+
+from shot import Shot
 import pygame
-from  import Asteroid
-from  import  PLAYER_SHOOT_COOLDOWN_SECONDS, SCREEN_HEIGHT,  SCREEN_WIDTH
-from  import log_state, log_event
-from  import Player
-from  import AsteroidField
+from asteroid import Asteroid
+from constants import  PLAYER_SHOOT_COOLDOWN_SECONDS, SCREEN_HEIGHT,  SCREEN_WIDTH
+from  LOGGER import log_state, log_event
+from  player import Player
+from  asteroidfield import AsteroidField
 import sys
 
 def main():

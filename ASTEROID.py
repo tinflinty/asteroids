@@ -1,9 +1,9 @@
 import random
 
-from  import log_event
+from LOGGER import log_event
 import pygame
-from  import ASTEROID_MIN_RADIUS, LINE_WIDTH
-from  import CircleShape
+from  constants import ASTEROID_MIN_RADIUS, LINE_WIDTH
+from  circleshape import CircleShape
 
 
 class Asteroid(CircleShape):
